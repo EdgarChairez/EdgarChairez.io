@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:wght@100;200&family=Playfair+Display:ital,wght@1,800&display=swap');
+
+@media (max-width: 1050px){
+    #mapa{
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    #habilidades{
+        display: none;
+    }
+    #curriculum{
+        margin-bottom: 5%;;
+    }
+    #foto{
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 501px){
+    #habilidades2{
+        display: none;
+    }
+
+}
+
+@media (max-width: 350px){
+    #foto{
+        display: none;
+    }
+
+}
+
+#acercaDeMi h1{
+    font-family: 'Playfair Display', serif;
+}
+
+#acercaDeMi p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#foto{
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 0px rgb(0, 3, 3);
+}
+
+#pie{
+    background-color: rgb(70, 70, 70);
+}
+
+#pie p{
+    color: aquamarine;
+}
+
+#formulario{
+    border-radius: 15px;
+}
+
+
+.tbHabilidades{
+    border: 1px;
+    border-color: black;
+}
+
+.exp{
+    margin-right: 5vh;
+}
+
+
+.tituloPie{
+    color: white;
+}
+
+.icono{
+    color: white;
+    padding: 0.5rem;
+}
+
+.cambio{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.cambio:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.formacion{
+    margin: 0px;
+}
+
+.fecha{
+    background-color: rgba(0, 0, 0, 0.3);
+}
