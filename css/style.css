@@ -4,6 +4,9 @@
     #mapa{
         display: none;
     }
+    #marca{
+        display: none;
+    }
 }
 
 @media (max-width: 500px){
@@ -15,9 +18,6 @@
     }
     #foto{
         max-width: 300px;
-    }
-    #marca{
-        display: none;
     }
 }
 
