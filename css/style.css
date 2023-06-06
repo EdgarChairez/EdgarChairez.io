@@ -1,38 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:wght@100;200&family=Playfair+Display:ital,wght@1,800&display=swap');
 
 @media (max-width: 1050px){
-    #mapa{
+    #mapa{  /* Quita mapa en pantallas pequeñas */
         display: none;
     }
-    #marca{
+    #marca{ /* Quita marca en pantallas pequeñas */
         display: none;
     }
 }
 
 @media (max-width: 500px){
-    #habilidades{
+    #habilidades{   /* Quita tabla de habilidades */
         display: none;
     }
     #curriculum{
         margin-bottom: 5%;;
     }
-    #foto{
+    #foto{  /* Quita Tamaño maximo en pantallas */
         max-width: 300px;
     }
 }
 
 @media (min-width: 501px){
-    #habilidades2{
+    #habilidades2{  /* Quita lista de habilidades */
         display: none;
     }
 
 }
 
-@media (max-width: 350px){
-    #foto{
+@media (max-width: 350px){ 
+    #foto{ /* Quita foto en pantallas pequeñas */
         display: none;
     }
 
+}
+
+#logo{
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: xx-large;
 }
 
 #acercaDeMi h1{
@@ -97,4 +103,42 @@
 
 .fecha{
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Glider */
+.carousel__siguiente,
+.carousel__anterior {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 30px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: black;
+    opacity: 40%;
+}
+.carousel__siguiente:hover,
+.carousel__anterior:hover {
+    opacity: 100%;
+}
+
+.carousel__siguiente{
+    right: -30px;
+}
+.carousel__anterior{
+    left: -30px;
+}
+
+.carousel__lista{
+    overflow: hidden;
+}
+
+.carousel__contenedor{
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
 }

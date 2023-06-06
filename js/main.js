@@ -26,9 +26,40 @@ function validarTamanoPantalla() {
 // Llamada a la función cuando se carga la página
 window.onload = function() {
     validarTamanoPantalla();
+    
+    new Glider(document.querySelector('.carousel__lista'), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: '.dots',
+        arrows: {
+            prev: '.carousel__anterior',
+            next: '.carousel__siguiente'
+        },
+        responsive: [
+            {
+              // screens greater than >= 775px
+              breakpoint: 775,
+              settings: {
+                // Set to `auto` and provide item width to adjust to viewport
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+                // screens greater than >= 1024px
+                breakpoint: 1000,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+                }
+              },{
+              // screens greater than >= 1024px
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3.5,
+                slidesToScroll: 1
+              }
+            }
+          ]
+    });
 };
-  
-// Llamada a la función cuando se redimensiona la ventana
-// window.onresize = function() {
-//     validarTamanoPantalla();
-// };

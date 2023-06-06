@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
   </head>
   <body>
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Edgar Chairez</a>
+          <a id="logo" class="navbar-brand" href="#">Edgar Chairez</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,6 +25,7 @@
               <a class="nav-link disabled" href="#portafolio">Portafolio de proyectos</a>
               <a class="nav-link" href="#habilidades">Habilidades y competencias</a>
               <a class="nav-link" href="#experiencia">Experiencia laboral</a>
+              <a class="nav-link" href="#cursos">Cursos</a>
               <a class="nav-link" href="#pie">Contacto</a>
             </div>
           </div>
@@ -48,7 +50,7 @@
                   <p class="align-items-end">Ingeniero en Sistemas Computacionales</p>
                   <p class="formacion fw-bold">Formación</p>
                   <p class="formacion">Instituto Tecnologico Superior de ElDorado</p>
-                  <button id="curriculum" class="btn btn-outline-secondary mt-2"><a class="nav-link" href="archivos/Curriculum.pdf" target="_blank">Curriculum</a></button>
+                  <button id="curriculum" class="btn btn-outline-secondary mt-2"><a class="nav-link" href="archivos/Curriculum(2).pdf" target="_blank">Curriculum</a></button>
                 </div>
               </div>
             </div>
@@ -221,6 +223,61 @@
     </div>
     <!-- ----------- -->
 
+    <!-- Cursos -->
+    <div id="cursos" class="container text-center align-items-center">
+      <div class="carousel ">
+        <div class="carousel__contenedor">
+          <button aria-label="Anterior" class="carousel__anterior">
+            <i class="bi bi-chevron-double-left"></i>
+          </button>
+          
+          <div class="carousel__lista">
+            <div class="carousel__elemento">
+              <div class="card" style="width: 18rem;">
+                <img src="archivos/Certificado - Git, GitHub y GitLab.jpg" class="card-img-top" alt="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/OpenGraph/og_coppel.jpg">
+                <div class="card-body">
+                  <h5>Git, GitHub y GitLab</h5>
+                  <p class="card-text">Curso para el uso de repositorios de código en Udemy</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__elemento">
+              <div class="card" style="width: 18rem;">
+                <img src="img/Tec.jfif" class="card-img-top" alt="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/OpenGraph/og_coppel.jpg">
+                <div class="card-body">
+                  <h5>Curso de inglés en Instituto tecnológico Superior de ElDorado</h5>
+                  <p class="card-text">Curso sabatino de Inglés en instituto Tecnológico Superior de ElDorado</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__elemento">
+              <div class="card" style="width: 18rem;">
+                <img src="img/Coppel.jpg" class="card-img-top" alt="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/OpenGraph/og_coppel.jpg">
+                <div class="card-body">
+                  <h5>Congreso</h5>
+                  <p class="card-text">Congreso Internacional de Sistemas y Tecnologías de la Información</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__elemento">
+              <div class="card" style="width: 18rem;">
+                <img src="img/Coppel.jpg" class="card-img-top" alt="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/OpenGraph/og_coppel.jpg">
+                <div class="card-body">
+                  <h5>Congreso</h5>
+                  <p class="card-text">Congreso estatal de Fomento a la investigación en tecnologías de la información.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button aria-label="Siguiente" class="carousel__siguiente">
+            <i class="bi bi-chevron-double-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ------ -->
+
     <!-- Footer -->
     <footer id="pie" class="mt-3">
         <div class="row m-0">
@@ -246,6 +303,7 @@
             <p><a class="nav-link disabled" href="#portafolio">Portafolio de proyectos</a></p>
             <p><a class="nav-link " href="#habilidades">Habilidades y competencias</a></p>
             <p><a class="nav-link " href="#experiencia">Experiencia laboral</a></p>
+            <p><a class="nav-link " href="#cursos">Cursos</a></p>
           </div>
           <div id="marca" class="position-relative">
             <p class="position-absolute bottom-0 end-0 text-light">&copy;EdgarChairez - Mayo 2023</p>
@@ -258,5 +316,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
   </body>
 </html>
