@@ -46,14 +46,14 @@ window.onload = function() {
               }
             },
             {
-                // screens greater than >= 1024px
+                // screens greater than >= 1000px
                 breakpoint: 1000,
                 settings: {
                   slidesToShow: 3,
                   slidesToScroll: 1
                 }
               },{
-              // screens greater than >= 1024px
+              // screens greater than >= 1200px
               breakpoint: 1200,
               settings: {
                 slidesToShow: 3.5,
