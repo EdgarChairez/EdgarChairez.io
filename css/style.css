@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:wght@100;200&family=Playfair+Display:ital,wght@1,800&display=swap');
 
+
 @media (max-width: 1050px){
     #mapa{  /* Quita mapa en pantallas pequeñas */
         display: none;
@@ -31,6 +32,9 @@
     #cursosLista{
         display: none;
     }
+    #FondoCursosLista{
+        display: none;
+    }
 }
 
 @media (min-width: 501px){
@@ -47,7 +51,14 @@
     #logo{
         font-size: large !important;
     }
+}
 
+body{
+    background: rgba(0, 0, 0, 0.125);
+}
+
+tbody{
+    border: black;
 }
 
 #logo{
@@ -56,6 +67,9 @@
     font-size: xx-large;
 }
 
+#logo{
+    width: 15%;
+}
 #acercaDeMi h1{
     font-family: 'Playfair Display', serif;
 }
@@ -72,6 +86,8 @@
 
 #pie{
     background-color: rgb(70, 70, 70);
+    margin-top: 0px !important;
+    padding-top: 1%;
 }
 
 #pie p{
@@ -82,6 +98,62 @@
     border-radius: 15px;
 }
 
+/* Fondos */
+#fondoAcercaDeMi{
+    background: rgb(241 151 0);
+    padding-bottom: 2%;
+}
+
+#fondoProtafolio{
+    background: rgb(241 151 0);
+}
+
+#fondoHabilidades{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background: rgb(241 151 0);
+}
+
+#fondoExperiencia{
+    background: rgb(241 151 0);
+    padding-bottom: 1%;
+}
+
+#fondoCursos{
+    padding-top: 2%;
+    background: rgb(241 151 0);
+    padding-bottom: 2%;
+}
+
+#footer{
+    padding-bottom: 5%;
+
+    background-image: url("../img/Avion2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#tituloFooter{
+    font-size: 500%;
+    text-align: center;
+    font-family: 'Playfair Display';
+}
+
+#iconosFooter{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.icono{
+    margin: 5%;
+    color: black !important;
+    font-size: xx-large;
+}
+
+.otros{
+    text-align: center!important;   
+}
 
 .tbHabilidades{
     border: 1px;
@@ -156,4 +228,8 @@
     margin-top: 2%;
     margin-left: 0%;
     margin-right: 0%;
+}
+
+#logo:hover{
+    text-shadow: 0 0 30px #fff;
 }

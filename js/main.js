@@ -1,8 +1,9 @@
+
 const app = document.getElementById('portafolio');
 
 const  typewriter = new Typewriter(app, {
     loop: true,
-    delay:75
+    delay:100
 });
 
 // var ancho = window.innerWidth;
@@ -12,14 +13,14 @@ function validarTamanoPantalla() {
     var mensaje = "";
 
     if (ancho < 1000) {
-        mensaje = "Proximamente - Portafolio";
+        mensaje = "...";
     } else {
-        mensaje = "Proximamente - Portafolio de Proyectos";
+        mensaje = "Escribiendo...";
     }
 
     typewriter
     .typeString(mensaje)
-    .pauseFor(200)
+    .pauseFor(500)
     .start()
 }
 
@@ -63,3 +64,33 @@ window.onload = function() {
           ]
     });
 };
+
+
+function funcion(aux){
+  switch (aux) {
+  case 'git':
+    swal('GIT', 'https://github.com/EdgarChairez', '../img/EC (1).png');
+    break;
+    
+  case 'mail':
+    swal('CORREO', 'chairezandres0@gmail.com', '../img/EC (1).png');
+    break;
+
+  case 'red':
+    swal('PAGINA', 'https://edgarchairez.github.io/EdgarChairez.io/', '../img/EC (1).png');
+    break;
+      
+  case 'cel':
+    swal('CELULAR', '(+52) 667-401-8894', '../img/EC (1).png');
+    break;
+    
+  case 'in':
+    swal('LINKEDIN', 'https://www.linkedin.com/in/edgar-andr%C3%A9s-chairez-sanchez-a784961b8', '../img/EC (1).png');
+    break;
+  
+  default:
+    break;
+  }
+}
+
+
