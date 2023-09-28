@@ -114,6 +114,12 @@ tbody{
     background: rgb(241 151 0);
 }
 
+#habilidades2{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background: rgb(241 151 0);
+}
+
 #fondoExperiencia{
     background: rgb(241 151 0);
     padding-bottom: 1%;
@@ -218,10 +224,6 @@ tbody{
 }
 .carousel__anterior{
     left: -30px;
-}
-
-.carousel__lista{
-    /* overflow: hidden; */
 }
 
 .carousel__contenedor{

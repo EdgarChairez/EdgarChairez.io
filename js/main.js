@@ -22,7 +22,7 @@ function validarTamanoPantalla() {
     .typeString(mensaje)
     .pauseFor(500)
     .start()
-}
+};
 
 // Llamada a la función cuando se carga la página
 window.onload = function() {
@@ -91,6 +91,6 @@ function funcion(aux){
   default:
     break;
   }
-}
+};
 
 
