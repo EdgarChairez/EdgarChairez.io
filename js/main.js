@@ -26,71 +26,69 @@ function validarTamanoPantalla() {
 
 // Llamada a la función cuando se carga la página
 window.onload = function() {
-    validarTamanoPantalla();
-    
-    new Glider(document.querySelector('.carousel__lista'), {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: '.dots',
-        arrows: {
-            prev: '.carousel__anterior',
-            next: '.carousel__siguiente'
-        },
-        responsive: [
-            {
-              // screens greater than >= 775px
-              breakpoint: 775,
-              settings: {
-                // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-                // screens greater than >= 1000px
-                breakpoint: 1000,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1
-                }
-              },{
-              // screens greater than >= 1200px
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 3.5,
-                slidesToScroll: 1
-              }
-            }
-          ]
-    });
+  validarTamanoPantalla();
+
+  new Glider(document.querySelector('.carousel__lista'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '.dots',
+    arrows: {
+      prev: '.carousel__anterior',
+      next: '.carousel__siguiente'
+    },
+    responsive: [
+      {
+        // screens greater than >= 775px
+        breakpoint: 775,
+        settings: {
+          // Set to `auto` and provide item width to adjust to viewport
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        // screens greater than >= 1000px
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        // screens greater than >= 1200px
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3.5,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 };
 
+git = document.getElementById('git');
+function btnGit() {
+  location.href=window.open("https://github.com/EdgarChairez");
+}
 
-function funcion(aux){
-  switch (aux) {
-  case 'git':
-    swal('GIT', 'https://github.com/EdgarChairez', '../img/EC (1).png');
-    break;
-    
-  case 'mail':
-    swal('CORREO', 'chairezandres0@gmail.com', '../img/EC (1).png');
-    break;
+lin = document.getElementById('btnIN');
+function btnIN() {
+  location.href=window.open("https://www.linkedin.com/in/edgar-andr%C3%A9s-chairez-sanchez-a784961b8");
+}
 
-  case 'red':
-    swal('PAGINA', 'https://edgarchairez.github.io/EdgarChairez.io/', '../img/EC (1).png');
-    break;
-      
-  case 'cel':
-    swal('CELULAR', '(+52) 667-401-8894', '../img/EC (1).png');
-    break;
-    
-  case 'in':
-    swal('LINKEDIN', 'https://www.linkedin.com/in/edgar-andr%C3%A9s-chairez-sanchez-a784961b8', '../img/EC (1).png');
-    break;
-  
-  default:
-    break;
-  }
-};
+mail = document.getElementById('btnMail');
+function btnMail(){
+  alert('Correo personal:\nchairezandres0@gmail.com');
+}
+
+red = document.getElementById('btnRed');
+function btnRed(){
+  alert('Portafolio web:\nhttps://edgarchairez.github.io/EdgarChairez.io/');
+}
+
+cel = document.getElementById('btnCel');
+function btnCel(){
+  alert('Watsapp & Llamadas:\n(+52) 667-401-8894');
+}
 
 

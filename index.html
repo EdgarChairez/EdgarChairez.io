@@ -22,11 +22,11 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="#acercaDeMi">Acerca de mí</a>
-              <a class="nav-link disabled" href="#portafolio">Portafolio de proyectos</a>
-              <a class="nav-link" href="#habilidades">Habilidades y competencias</a>
-              <a class="nav-link" href="#experiencia">Experiencia laboral</a>
-              <a class="nav-link" href="#cursos">Cursos</a>
+              <a class="nav-link" href="#fondoAcercaDeMi">Acerca de mí</a>
+              <a class="nav-link disabled" href="#fondoProtafolio">Portafolio de proyectos</a>
+              <a class="nav-link" href="#fondoHabilidades">Habilidades y competencias</a>
+              <a class="nav-link" href="#fondoExperiencia">Experiencia laboral</a>
+              <a class="nav-link" href="#fondoCursos">Cursos</a>
               <a class="nav-link" href="#footer">Contacto</a>
             </div>
           </div>
@@ -236,64 +236,32 @@
     </div>
 
     <!-- Cursos -->
-    <div id="fondoCursos">
-      <div id="cursos" class="container carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
+    <div id="fondoCursos" class="container">
+      <div id="carouselCursos" class="carousel slide">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="archivos/Certificado - Git, GitHub y GitLab.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-            <h5>Git, GitHub y GitLab</h5>
-            <p class="card-text">Curso para el uso de repositorios de código en Udemy</p>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/Software Testing.jpg" class="card-img-top imgCarrusel" alt="Certificado UDEMY">
-            <div class="carousel-caption d-none d-md-block">
-              <div class="card-body">
-              </div>
-            </div>
-            <h5>Software Testing</h5>
-            <p class="card-text">Curso sobre Testing en Udemy</p> 
+          <div class="carousel-item active">
+            <img src="img/Software Testing.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/TecNM-logo.png" class="card-img-top imgCarrusel" alt="Logo Instituto Tecnologico Superior de ElDorado">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-            <h5>Curso de inglés en Instituto tecnológico Superior de ElDorado</h5>
-            <p class="card-text">Curso de Inglés en instituto Tecnológico Superior de ElDorado</p>
+            <img src="img/Git, GitHub y GitLab.jpg" class="w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/TecNM-logo.png" class="card-img-top imgCarrusel" alt="Logo Instituto Tecnologico Superior de ElDorado">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-            <h5>Congreso</h5>
-              <p class="card-text">Congreso Internacional de Sistemas y Tecnologías de la Información</p>
-          </div>
-          <div class="carousel-item">
-            <img src="img/TecNM-logo.png" class="card-img-top imgCarrusel" alt="Logo Instituto Tecnologico Superior de ElDorado">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-            <h5>Congreso</h5>
-            <p class="card-text">Congreso estatal de Fomento a la investigación en tecnologías de la información</p>
+            <img src="img/Tec.jpg" class="d-block w-100" alt="...">
+            <h3 id="ingles">Inglés en Instituto tecnológico Superior de ElDorado</h3>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCursos" data-bs-slide="prev">
+          <span class="" aria-hidden="true"><i class="btnCursos bi bi-chevron-compact-left"></i></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCursos" data-bs-slide="next">
+          <span class="" aria-hidden="true"><i class="btnCursos bi bi-chevron-right"></i></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
+    </div>
+    <!-- Cursos -->
+    
       <div id="cursosLista" class="container text-center pt-3">
         <ul class="list-group">
           <li class="list-group-item bg-dark text-light" aria-current="true">Cursos</li>
@@ -311,11 +279,11 @@
   <div id="footer">
     <h1 id="tituloFooter">Contacto</h1>
     <div id="iconosFooter"  class="container">
-      <i id="git" title="GitHub" class="bi bi-github icono btn" onclick="funcion('git')"></i>
-      <i id="mail" title="Correo" class="bi bi-envelope icono btn" onclick="funcion('mail')"></i>
-      <i id="red" title="Portafolio" class="bi bi-globe2 icono btn" onclick="funcion('red')"></i>
-      <i id="in" title="Linkedin" class="bi bi-linkedin icono btn" onclick="funcion('in')"></i>
-      <i id="cel" title="Numero Celular" class="bi bi-phone icono btn" onclick="funcion('cel')"></i>
+      <i id="git" title="GitHub" class="bi bi-github icono btn" onclick="btnGit()"></i>
+      <i id="mail" title="Correo" class="bi bi-envelope icono btn" onclick="btnMail()"></i>
+      <i id="red" title="Portafolio" class="bi bi-globe2 icono btn" onclick="btnRed()"></i>
+      <i id="in" title="Linkedin" class="bi bi-linkedin icono btn" onclick="btnIN()"></i>
+      <i id="cel" title="Numero Celular" class="bi bi-phone icono btn" onclick="btnCel()"></i>
     </div>
   </div>  
 
@@ -323,7 +291,5 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
-    
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>
