@@ -23,7 +23,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link" href="#fondoAcercaDeMi">Acerca de mí</a>
-              <a class="nav-link disabled" href="#fondoProtafolio">Portafolio de proyectos</a>
+              <a class="nav-link" href="#fondoProtafolio">Portafolio de proyectos</a>
               <a class="nav-link" href="#fondoHabilidades">Habilidades y competencias</a>
               <a class="nav-link" href="#fondoExperiencia">Experiencia laboral</a>
               <a class="nav-link" href="#fondoCursos">Cursos</a>
@@ -83,21 +83,33 @@
         <!--
         <h1> <span id="portafolio" title="Portafolio de Proyectos"></span></h1>
         -->
-        <!-- Pagina Celulares -->
+        <!-- Pagina -->
         <div class="card text-center text-muted bg-secondary">
           <div class="card-header bg-dark text-light">
-            En Proceso
+              Portafolio
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-light">Portafolio de habilidades</h5>
+            <p class="card-text text-light">Portafolio para mostrar mi información y capacidades.</p>
+            <a href="https://edgarchairez.github.io/EdgarChairez.io/" class="btn btn-dark">Ir</a>
+          </div>
+          <div class="card-header bg-dark text-light">
+              Automatización
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-light">Python con Selenium</h5>
+            <p class="card-text text-light">Programa para obtener el directorio que se encuentra en la pagina <a href="https://opensource-demo.orangehrmlive.com" id="linkSelenium">"https://opensource-demo.orangehrmlive.com"</a>.</p>
+            <a href="https://github.com/EdgarChairez/SeleniumConPython---ObtenerDirectorio/archive/refs/heads/main.zip" class="btn btn-dark">Descargar</a>
+          </div>
+          <div class="card-header bg-dark text-light">
+            Pausada
           </div>
           <div class="card-body">
             <h5 class="card-title text-light">Pagina para celulares</h5>
-            <p class="card-text text-light">Pagina web para llevar el control e historial sobre los equipos en reparación</p>
-            <a href="Proyectos/Celulares/index.html" class="btn btn-dark">Abrir</a>
-          </div>
-          <div class="card-footer bg-dark text-light">
-            En proceso
+            <p class="card-text text-light">Pagina web para llevar el control e historial sobre los equipos en reparación.</p>
+            <a href="Proyectos/Celulares/index.html" class="btn btn-dark desactivado" >Abrir</a>
           </div>
         </div>
-        <!---->
       </div>
     </div>
     <!-- ---------- -->
@@ -165,22 +177,27 @@
     <!-- Habilidades lista -->
     <div id="habilidades2" class="container text-center">
       <ul class="list-group">
-        <li class="list-group-item bg-dark text-light" aria-current="true">Programacion</li>
-        <li class="list-group-item">JS, PHP, C#, Java, VB, Pyhton, C++</li>
-        <li class="list-group-item bg-dark text-light">Maquetación</li>
-        <li class="list-group-item">HTML, CSS, Bootstrap</li>
-        <li class="list-group-item bg-dark text-light">Base de Datos</li>
-        <li class="list-group-item">SQL, MySQL, PostgreSQL</li>
+        <li class="list-group-item bg-dark text-light listaHabilidad" aria-current="true">Programacion</li>
+        <li class="list-group-item listaHabilidad">JS, PHP, C#, Java, VB, Pyhton, C++</li>
+        <hr>
+        <li class="list-group-item bg-dark text-light listaHabilidad">Maquetación</li>
+        <li class="list-group-item listaHabilidad">HTML, CSS, Bootstrap</li>
+        <hr>
+        <li class="list-group-item bg-dark text-light listaHabilidad">Base de Datos</li>
+        <li class="list-group-item listaHabilidad">SQL, MySQL, PostgreSQL</li>
+        <hr>
       </ul>
       
       <ul class="list-group">
-        <li class="list-group-item bg-dark text-light" aria-current="true">Otras habilidades</li>
-        <li class="list-group-item">Photoshop, Postman, Git, GitHub, Selenium</li>
+        <li class="list-group-item bg-dark text-light listaHabilidad" aria-current="true">Otras habilidades</li>
+        <li class="list-group-item listaHabilidad">Photoshop, Postman, Git, GitHub, Selenium</li>
+        <hr>
       </ul>
       
       <ul class="list-group">
-        <li class="list-group-item bg-dark text-light" aria-current="true">Habilidades en desarrollo</li>
-        <li class="list-group-item">C++, Pyhton</li>
+        <li class="list-group-item bg-dark text-light listaHabilidad" aria-current="true">Habilidades en desarrollo</li>
+        <li class="list-group-item listaHabilidad">C++, Pyhton</li>
+        <hr>
       </ul>
     </div>
     <!-- ------------------------ -->
@@ -280,13 +297,18 @@
     
       <div id="cursosLista" class="container text-center pt-3">
         <ul class="list-group">
-          <li class="list-group-item bg-dark text-light" aria-current="true">Cursos</li>
-          <li class="list-group-item">Git, GitHub y GitLab</li>
-          <li class="list-group-item">Software Testing</li>
-          <li class="list-group-item">Inglés en Instituto tecnológico Superior de ElDorado</li>
-          <li class="list-group-item bg-dark text-light mt-2">Congresos</li>
-          <li class="list-group-item">Congreso Internacional de Sistemas y Tecnologías de la Información</li>
-          <li class="list-group-item">Congreso estatal de Fomento a la investigación en tecnologías de la información</li>
+          <li class="list-group-item bg-dark text-light listaHabilidad" aria-current="true">Cursos</li>
+          <li class="list-group-item listaHabilidad">Git, GitHub y GitLab</li>
+          <hr>
+          <li class="list-group-item listaHabilidad">Software Testing</li>
+          <hr>
+          <li class="list-group-item listaHabilidad">Inglés en Instituto tecnológico Superior de ElDorado</li>
+          <hr>
+          <li class="list-group-item listaHabilidad bg-dark text-light mt-2">Congresos</li>
+          <li class="list-group-item listaHabilidad">Congreso Internacional de Sistemas y Tecnologías de la Información</li>
+          <hr>
+          <li class="list-group-item listaHabilidad">Congreso estatal de Fomento a la investigación en tecnologías de la información</li>
+          <hr>
         </ul>
       </div>
   </div>
