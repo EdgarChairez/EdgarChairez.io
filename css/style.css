@@ -122,7 +122,7 @@ tbody{
 #habilidades2{
     padding-top: 2%;
     padding-bottom: 1%;
-    background: rgb(241 151 0);
+    background: none;
 }
 
 #fondoExperiencia{
@@ -160,6 +160,11 @@ tbody{
     text-align: end; 
     font-family: fangsong; 
     color: #183869;
+}
+
+#linkSelenium{
+    color: black;
+    text-decoration: none;
 }
 
 #logo:hover{
@@ -213,6 +218,11 @@ tbody{
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.listaHabilidad{
+    background: none;
+    border: none;
+}
+
 /* Glider */
 .carousel__siguiente,
 .carousel__anterior {
@@ -252,6 +262,8 @@ tbody{
     font-size: xxx-large;
 }
 
-.carouselCursos{
-
+.desactivado { 
+    pointer-events: none; 
+    cursor: default; 
+    color: gray;
 }

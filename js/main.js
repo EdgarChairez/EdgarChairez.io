@@ -90,5 +90,3 @@ cel = document.getElementById('btnCel');
 function btnCel(){
   alert('Watsapp & Llamadas:\n(+52) 667-401-8894');
 }
-
-
