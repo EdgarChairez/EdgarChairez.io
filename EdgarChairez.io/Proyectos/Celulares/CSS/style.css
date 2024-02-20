@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Maps&display=swap');
+
+
+@media (min-width: 901px){
+    #imgInicioUno{
+        display: none;
+        width: 35%;
+        font-size: 2.5vh;
+    }
+    .login{
+        width: 50%;
+        position: relative;
+        top: 30vh;
+    }
+}
+@media (max-width: 900px){
+    #imgInicioDos{
+        display: none;
+    }
+}
+
+body{
+    /* Degradado Fondo */ 
+    background: #2bbfe4; /* Old browsers */ background: -moz-linear-gradient(left, #2bbfe4 0%, #eaecc6 100%); /* FF3.6-15 */ 
+    background: -webkit-linear-gradient(left, #2bbfe4 0%,#eaecc6 100%); /* Chrome10-25,Safari5.1-6 */ 
+    background: linear-gradient(to right, #2bbfe4 0%,#eaecc6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bbfe4', endColorstr='#eaecc6',GradientType=1 );
+}
+
+#tituloInicio{
+    font-size: x-large;
+}
+
+#login{
+    text-align: center;
+}
+
+#imgLogin{
+    width: 25%;
+}
+
+#imgInicioDos{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#imgInicioUno{
+    width: 60%;
+}
+
+#btnConsultar{
+    margin-right: 5%;
+}
+
+#btnRegresar{
+    background: red;
+    color: white;
+}
+
+button{
+    border-radius: 7px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    font-family: 'Rubik Glitch', system-ui;
+}
+
+hr{
+    width: 50%;
+}
+
+.btnLogin{
+    font-size: x-large;
+}
