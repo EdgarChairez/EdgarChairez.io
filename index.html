@@ -28,6 +28,14 @@
               <a class="nav-link" href="#fondoExperiencia">Experiencia laboral</a>
               <a class="nav-link" href="#fondoCursos">Cursos</a>
               <a class="nav-link" href="#footer">Contacto</a>
+              <button type="button" class="btn btn-primary btnSol" onclick="modoClaro()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill sol" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"></path></svg>
+              </button>
+              <button type="button" class="btn btn-primary btnLuna" onclick="modoOscuro()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon luna" viewBox="0 0 16 16">
+                  <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -42,13 +50,13 @@
             <!-- Carrusel -->
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item container">
+                <div class="carousel-item container contenido">
                   <h1 class="fw-bold">Front End Developer</h1>
                     <p class="align-items-end">Como desarrollador web, tengo una pasión por crear soluciones digitales atractivas y funcionales</p>
                 </div>
                 <div class="carousel-item active">
                   <h1 class="fw-bold">Edgar Andres Chairez Sanchez</h1>
-                  <div class="container ">
+                  <div class="container">
                     <p class="align-items-end">Ingeniero en Sistemas Computacionales</p>
                     <p class="formacion fw-bold">Formación</p>
                     <p class="formacion">Instituto Tecnologico Superior de ElDorado</p>
@@ -69,7 +77,6 @@
           </div>
           <div class="col-12 col-sm-6">
             <img id="foto" src="img/Foto.png" class="img-thumbnail" alt="https://unsplash.com/es/fotos/IIDZ77VDVQE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-
           </div>
         </div>
       </div>
@@ -83,31 +90,14 @@
         <!--
         <h1> <span id="portafolio" title="Portafolio de Proyectos"></span></h1>
         -->
-        <!-- Pagina Celulares -->
-        <div class="card text-center text-muted bg-secondary">
-          <div class="card-header bg-dark text-light">
-              Portafolio
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-light">Portafolio de habilidades</h5>
-            <p class="card-text text-light">Portafolio para mostrar mi información y capacidades.</p>
-            <a href="https://edgarchairez.github.io/EdgarChairez.io/" class="btn btn-dark">Ir</a>
-          </div>
+        <div class="card text-center text-muted bg-secondary portafolio">
           <div class="card-header bg-dark text-light">
               Automatización
           </div>
-          <div class="card-body">
-            <h5 class="card-title text-light">Python con Selenium</h5>
-            <p class="card-text text-light">Programa para obtener el directorio que se encuentra en la pagina <a href="https://opensource-demo.orangehrmlive.com" id="linkSelenium">"https://opensource-demo.orangehrmlive.com"</a>.</p>
+          <div class="card-body cardPortafolio">
+            <h5 class="card-title text-dark">Python con Selenium</h5>
+            <p class="card-text">Programa de automatizacion para obtener el directorio que se encuentra en la paguina <a href="https://opensource-demo.orangehrmlive.com" id="linkSelenium">"https://opensource-demo.orangehrmlive.com"</a>.</p>
             <a href="https://github.com/EdgarChairez/SeleniumConPython---ObtenerDirectorio/archive/refs/heads/main.zip" class="btn btn-dark">Descargar</a>
-          </div>
-          <div class="card-header bg-dark text-light">
-            Pausada
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-light">Pagina para celulares</h5>
-            <p class="card-text text-light">Pagina web para llevar el control e historial sobre los equipos en reparación.</p>
-            <a href="Proyectos/Celulares/index.html" class="btn btn-dark desactivado" >Abrir</a>
           </div>
         </div>
       </div>
@@ -161,7 +151,7 @@
         <table id="enDesarrollo" class="table text-center">
           <thead class="table-dark">
             <tr>
-              <th scope="col" title="Reforzando conocimiento">Habilidades en desarrollo</th>
+              <th scope="col" title="Reforzando conocimiento">Reforzando habilidades </th>
             </tr>
           </thead>
           <tbody>
@@ -208,40 +198,40 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 ">
           <!-- Coppel -->
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 quitarBorde">
               <img src="img/Coppel.jpg" class="card-img-top" alt="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/OpenGraph/og_coppel.jpg">
               <div class="card-body">
                 <h5 class="card-title">Tester</h5>
                 <p class="card-text">Como Tester, soy responsable de probar el software, planificar, ejecutar y reportar las pruebas, así como identificar y solucionar los errores que encuentre para asegurar su calidad y funcionamiento.</p>
               </div>
-              <div class="card-footer fecha">
-                <small class="text-body-secondary">Agosto 2023 - Actualidad</small>
+              <div class="card-footer fecha bg-dark">
+                <small class="text-light">Agosto 2023 - Actualidad</small>
               </div>
             </div>
           </div>
           <!-- APInterfases -->
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 quitarBorde">
               <img src="img/ApInterfaces.png" class="card-img-top" alt="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/OpenGraph/og_coppel.jpg">
               <div class="card-body">
                 <h5 class="card-title">Tester</h5>
                 <p class="card-text">Como Tester, soy responsable de garantizar la calidad y fiabilidad del software a través de rigurosas pruebas y análisis. Mi objetivo principal es identificar y reportar errores asi como problemas de rendimiento.</p>
               </div>
-              <div class="card-footer fecha">
-                <small class="text-body-secondary">Mayo 2022 - Agosto 2023</small>
+              <div class="card-footer fecha bg-dark">
+                <small class="text-light">Mayo 2022 - Agosto 2023</small>
               </div>
             </div>
           </div>
           <!-- Coppel -->
-          <div class="col">
-            <div class="card h-100">
+          <div class="col ">
+            <div class="card h-100 quitarBorde">
               <img src="img/Coppel.jpg" class="card-img-top" alt="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/OpenGraph/og_coppel.jpg">
               <div class="card-body">
                 <h5 class="card-title">Analista de soporte</h5>
                 <p class="card-text">Como Analista de Soporte, desempeño un papel esencial en el mantenimiento y la resolución de problemas relacionados con el software, hardware o sistemas utilizados por los usuarios finales.</p>
               </div>
-              <div class="card-footer fecha">
-                <small class="text-body-secondary">Diciembre 2020 - Mayo 2021</small>
+              <div class="card-footer fecha bg-dark">
+                <small class="text-light">Diciembre 2020 - Mayo 2021</small>
               </div>
             </div>
           </div>
@@ -250,9 +240,9 @@
 
       <br>
       <div class="accordion container" id="accordionFlushExample">
-        <div class="accordion-item">
+        <div class="accordion-item quitarBorde  ">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               <h5 class="card-title otros">Otros</h5>
             </button>
           </h2>
@@ -267,61 +257,30 @@
         </div>
       </div>
     </div>
-
-    <!-- Cursos -->
-    <div id="fondoCursos" class="container">
-      <div id="carouselCursos" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Software Testing.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/Git, GitHub y GitLab.jpg" class="w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/Tec.jpg" class="d-block w-100" alt="...">
-            <h3 id="ingles">Inglés en Instituto tecnológico Superior de ElDorado</h3>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCursos" data-bs-slide="prev">
-          <span class="" aria-hidden="true"><i class="btnCursos bi bi-chevron-compact-left"></i></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCursos" data-bs-slide="next">
-          <span class="" aria-hidden="true"><i class="btnCursos bi bi-chevron-right"></i></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+<br>
+  <div id="footer" class="container">
+    <!--<h1 id="tituloFooter">Contacto</h1>-->
+    <div id="sobreMi" class="container">
+      <h1>Sobre Mi</h1>
+      <p>Soy una persona seria, responsable y trabajadora, que se compromete con los objetivos y los resultados. Me caracterizo por ser puntual, honesto y disciplinado, así como por tener empatía con los clientes y los compañeros de trabajo.</p>
     </div>
-    <!-- Cursos -->
-    
-      <div id="cursosLista" class="container text-center pt-3">
-        <ul class="list-group">
-          <li class="list-group-item bg-dark text-light listaHabilidad" aria-current="true">Cursos</li>
-          <li class="list-group-item listaHabilidad">Git, GitHub y GitLab</li>
-          <hr>
-          <li class="list-group-item listaHabilidad">Software Testing</li>
-          <hr>
-          <li class="list-group-item listaHabilidad">Inglés en Instituto tecnológico Superior de ElDorado</li>
-          <hr>
-          <li class="list-group-item listaHabilidad bg-dark text-light mt-2">Congresos</li>
-          <li class="list-group-item listaHabilidad">Congreso Internacional de Sistemas y Tecnologías de la Información</li>
-          <hr>
-          <li class="list-group-item listaHabilidad">Congreso estatal de Fomento a la investigación en tecnologías de la información</li>
-          <hr>
-        </ul>
-      </div>
-  </div>
-    <!-- ------ -->
-
-  <div id="footer">
-    <h1 id="tituloFooter">Contacto</h1>
     <div id="iconosFooter"  class="container">
-      <i id="git" title="GitHub" class="bi bi-github icono btn" onclick="btnGit()"></i>
-      <i id="mail" title="Correo" class="bi bi-envelope icono btn" onclick="btnMail()"></i>
-      <i id="red" title="Portafolio" class="bi bi-globe2 icono btn" onclick="btnRed()"></i>
-      <i id="in" title="Linkedin" class="bi bi-linkedin icono btn" onclick="btnIN()"></i>
-      <i id="cel" title="Numero Celular" class="bi bi-phone icono btn" onclick="btnCel()"></i>
+      <h1>Contacto</h1>
+      <div>
+        <p>chairezandres0@gmail.com</p>
+      </div>
+      <div>
+        <p>(+52) 667-401-8894</p>
+      </div>
+      <div>
+        <p>https://edgarchairez.github.io/EdgarChairez.io/</p>
+      </div>
+      <div>
+        <p>https://github.com/EdgarChairez <button onclick="btnGit()" class="btnFooter">✈</button></p>
+      </div>
+      <div>
+        <p>www.linkedin.com/in/edgarandreschairezsanchez <button onclick="btnIN()" class="btnFooter">✈</button></p>
+      </div>
     </div>
   </div>  
 
