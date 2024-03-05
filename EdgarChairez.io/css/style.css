@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:wght@100;200&family=Playfair+Display:ital,wght@1,800&display=swap');
+
+
+:root{
+    --colorFondo: #ffa200;
+}
+ 
+
+@media (max-width: 500px){
+    #habilidades{   /* Quita tabla de habilidades */
+        display: none;
+    }
+    #curriculum{
+        margin-bottom: 5%;;
+    }
+    #foto{  /* Quita Tamaño maximo en pantallas */
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 580px){
+    #fondoCursos{
+        display: none;
+    }
+}
+
+@media (min-width: 581px){
+    #cursosLista{
+        display: none;
+    }
+    #FondoCursosLista{
+        display: none;
+    }
+}
+
+@media (min-width: 501px){
+    #habilidades2{  /* Quita lista de habilidades */
+        display: none;
+    }
+
+}
+
+@media (max-width: 350px){ 
+    #foto{ /* Quita foto en pantallas pequeñas */
+        display: none;
+    }
+    #logo{
+        font-size: large !important;
+    }
+}
+
+body{
+    background: var(--colorFondo);
+}
+
+tbody{
+    border: black;
+}
+
+#logo{
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: xx-large;
+}
+
+#logo{
+    width: 15%;
+}
+#acercaDeMi h1{
+    font-family: 'Playfair Display', serif;
+}
+
+#acercaDeMi p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#foto{
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 0px rgb(0, 3, 3);
+}
+
+#pie{
+    background-color: rgb(70, 70, 70);
+    margin-top: 0px !important;
+    padding-top: 1%;
+}
+
+#pie p{
+    color: aquamarine;
+}
+
+#formulario{
+    border-radius: 15px;
+}
+
+/* Fondos */
+#fondoAcercaDeMi{
+    background: var(--colorFondo);
+    padding-bottom: 2%;
+}
+
+#fondoProtafolio{
+    background: var(--colorFondo);
+}
+
+#fondoHabilidades{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background: var(--colorFondo);
+}
+
+#fondoCursos{
+    background: var(--colorFondo);  
+}
+
+#habilidades2{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background: none;
+}
+
+#fondoExperiencia{
+    background: var(--colorFondo);
+    padding-bottom: 1%;
+}
+
+#fondoCursos{
+    padding-top: 2%;
+    background: var(--colorFondo);
+    padding-bottom: 2%;
+}
+
+#footer{
+    padding-bottom: 5%;
+
+    background: var(--colorFondo);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#tituloFooter{
+    font-size: 500%;
+    text-align: center;
+    font-family: 'Playfair Display';
+}
+
+/*#iconosFooter{
+    text-align: center;
+    padding-top: 5%;
+}*/
+
+#ingles{
+    text-align: end; 
+    font-family: fangsong; 
+    color: #183869;
+}
+
+#linkSelenium{
+    color: black;
+    text-decoration: none;
+}
+
+#logo:hover{
+    text-shadow: 0 0 30px #fff;
+}
+
+.icono{
+    margin: 5%;
+    color: black !important;
+    font-size: xx-large;
+}
+
+.otros{
+    text-align: center!important;   
+}
+
+.tbHabilidades{
+    border: 1px;
+    border-color: black;
+}
+
+.exp{
+    margin-right: 5vh;
+}
+
+
+.tituloPie{
+    color: rgb(255, 255, 255);
+}
+
+.icono{
+    color: white;
+    padding: 0.5rem;
+}
+
+.cambio{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.cambio:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.formacion{
+    margin: 0px;
+}
+
+.fecha{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.listaHabilidad{
+    background: none;
+    border: none;
+}
+
+/* Glider */
+.carousel__siguiente,
+.carousel__anterior {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 30px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: black;
+    opacity: 40%;
+}
+.carousel__siguiente:hover,
+.carousel__anterior:hover {
+    opacity: 100%;
+}
+
+.carousel__siguiente{
+    right: -30px;
+}
+.carousel__anterior{
+    left: -30px;
+}
+
+.carousel__contenedor{
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.btnCursos{
+    color: black;
+    font-size: xxx-large;
+}
+
+.desactivado { 
+    pointer-events: none; 
+    cursor: default; 
+    color: gray;
+}
+
+.portafolio{
+    border: none;
+}
+
+.cardPortafolio{
+    background: var(--colorFondo);
+    border-bottom: solid;
+}
+
+.quitarBorde{
+    border: none;
+}
+
+.btnSol, .btnLuna{
+    background: none;
+    border: none;
+}
+
+.sol{
+    color: yellow;
+}
+
+#sobreMi{
+    width: 50%;
+    position: relative;
+
+    float: left;
+    text-align: center;
+}
+
+#iconosFooter{
+    width: 50%;
+    position: relative;
+    float: right;
+    text-align: center;
+}
+
+#sobreMi p{
+    font-family: serif;
+    font-size: large;
+    text-align: justify;
+}
+
+#iconosFooter div{ 
+    text-align: justify;
+    margin-left: 5%;
+}
+
+#iconosFooter i{
+    margin: 0px;
+}
+
+.btnFooter{
+    background: none;
+    border: none;
+}
