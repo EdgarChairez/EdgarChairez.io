@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:wght@100;200&family=Playfair+Display:ital,wght@1,800&display=swap');
 
 
-@media (max-width: 1050px){
-    #mapa{  /* Quita mapa en pantallas pequeñas */
-        display: none;
-    }
-    #marca{ /* Quita marca en pantallas pequeñas */
-        display: none;
-    }
+:root{
+    --colorFondo: #ffa200;
 }
+ 
 
 @media (max-width: 500px){
     #habilidades{   /* Quita tabla de habilidades */
@@ -54,8 +50,7 @@
 }
 
 body{
-    /*background: rgba(0, 0, 0, 0.125);*/
-    background: rgb(241 151 0);
+    background: var(--colorFondo);
 }
 
 tbody{
@@ -101,22 +96,22 @@ tbody{
 
 /* Fondos */
 #fondoAcercaDeMi{
-    background: rgb(241 151 0);
+    background: var(--colorFondo);
     padding-bottom: 2%;
 }
 
 #fondoProtafolio{
-    background: rgb(241 151 0);
+    background: var(--colorFondo);
 }
 
 #fondoHabilidades{
     padding-top: 2%;
     padding-bottom: 1%;
-    background: rgb(241 151 0);
+    background: var(--colorFondo);
 }
 
 #fondoCursos{
-    background: rgb(241 151 0);    
+    background: var(--colorFondo);  
 }
 
 #habilidades2{
@@ -126,20 +121,20 @@ tbody{
 }
 
 #fondoExperiencia{
-    background: rgb(241 151 0);
+    background: var(--colorFondo);
     padding-bottom: 1%;
 }
 
 #fondoCursos{
     padding-top: 2%;
-    background: rgb(241 151 0);
+    background: var(--colorFondo);
     padding-bottom: 2%;
 }
 
 #footer{
     padding-bottom: 5%;
 
-    background-image: url("../img/Avion2.png");
+    background: var(--colorFondo);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -151,10 +146,10 @@ tbody{
     font-family: 'Playfair Display';
 }
 
-#iconosFooter{
+/*#iconosFooter{
     text-align: center;
     padding-top: 5%;
-}
+}*/
 
 #ingles{
     text-align: end; 
@@ -192,7 +187,7 @@ tbody{
 
 
 .tituloPie{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .icono{
@@ -266,4 +261,61 @@ tbody{
     pointer-events: none; 
     cursor: default; 
     color: gray;
+}
+
+.portafolio{
+    border: none;
+}
+
+.cardPortafolio{
+    background: var(--colorFondo);
+    border-bottom: solid;
+}
+
+.quitarBorde{
+    border: none;
+}
+
+.btnSol, .btnLuna{
+    background: none;
+    border: none;
+}
+
+.sol{
+    color: yellow;
+}
+
+#sobreMi{
+    width: 50%;
+    position: relative;
+
+    float: left;
+    text-align: center;
+}
+
+#iconosFooter{
+    width: 50%;
+    position: relative;
+    float: right;
+    text-align: center;
+}
+
+#sobreMi p{
+    font-family: serif;
+    font-size: large;
+    text-align: justify;
+}
+
+#iconosFooter div{ 
+    text-align: justify;
+    margin-left: 5%;
+}
+
+#iconosFooter i{
+    margin: 0px;
+}
+
+.btnFooter{
+    background: none;
+    border: none;
 }
