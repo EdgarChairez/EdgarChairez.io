@@ -73,20 +73,13 @@ function btnGit() {
 
 lin = document.getElementById('btnIN');
 function btnIN() {
-  location.href=window.open("https://www.linkedin.com/in/edgar-andr%C3%A9s-chairez-sanchez-a784961b8");
+  location.href=window.open("https://www.linkedin.com/in/edgarandreschairezsanchez/");
 }
 
-mail = document.getElementById('btnMail');
-function btnMail(){
-  alert('Correo personal:\nchairezandres0@gmail.com');
+function modoClaro(){
+  alert('Sol')
 }
 
-red = document.getElementById('btnRed');
-function btnRed(){
-  alert('Portafolio web:\nhttps://edgarchairez.github.io/EdgarChairez.io/');
-}
-
-cel = document.getElementById('btnCel');
-function btnCel(){
-  alert('Watsapp & Llamadas:\n(+52) 667-401-8894');
+function modoOscuro(){
+  alert('Luna')
 }
