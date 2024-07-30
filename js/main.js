@@ -73,22 +73,34 @@ function btnGit() {
 
 lin = document.getElementById('btnIN');
 function btnIN() {
-  location.href=window.open("https://www.linkedin.com/in/edgar-andr%C3%A9s-chairez-sanchez-a784961b8");
+  location.href=window.open("https://www.linkedin.com/in/edgarandreschairezsanchez/");
 }
 
-mail = document.getElementById('btnMail');
-function btnMail(){
-  alert('Correo personal:\nchairezandres0@gmail.com');
+var color;
+var color1;
+function modoClaro(){
+  // Claro
+  color = "#ffa200";
+  color1 = "#000000";
+  modo();
 }
 
-red = document.getElementById('btnRed');
-function btnRed(){
-  alert('Portafolio web:\nhttps://edgarchairez.github.io/EdgarChairez.io/');
+function modoOscuro(){
+  // Oscuro
+  color = "#373b3e";
+  color1 = "#ffa200";
+  modo();
 }
 
-cel = document.getElementById('btnCel');
-function btnCel(){
-  alert('Watsapp & Llamadas:\n(+52) 667-401-8894');
+function modo(){
+  document.querySelector("#html").style.backgroundColor = color;
+  document.querySelector("#fondoAcercaDeMi").style.backgroundColor = color;
+  document.querySelector("#fondoProtafolio").style.backgroundColor = color;
+  document.querySelector("#fondoHabilidades").style.backgroundColor = color;
+  document.querySelector("#fondoExperiencia").style.backgroundColor = color;
+  document.querySelector("#carPortafolio").style.backgroundColor = color;
+  document.querySelector("#footer").style.backgroundColor = color;
+  document.querySelector("#body").style.backgroundColor = color;
+
+  //document.querySelector(".texto td").style.color = color1;
 }
-
-
