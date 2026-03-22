@@ -1,292 +1,178 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
-
-  </head>
-  <body>
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a id="logo" class="navbar-brand" href="#">Edgar Chairez</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#fondoAcercaDeMi">Acerca de mí</a>
-              <a class="nav-link" href="#fondoProtafolio">Portafolio de proyectos</a>
-              <a class="nav-link" href="#fondoHabilidades">Habilidades y competencias</a>
-              <a class="nav-link" href="#fondoExperiencia">Experiencia laboral</a>
-              <a class="nav-link" href="#fondoCursos">Cursos</a>
-              <a class="nav-link" href="#footer">Contacto</a>
-              <button type="button" class="btn btn-primary btnSol" onclick="modoClaro()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill sol" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"></path></svg>
-              </button>
-              <button type="button" class="btn btn-primary btnLuna" onclick="modoOscuro()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon luna" viewBox="0 0 16 16">
-                  <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
-                </svg>
-              </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Edgar Chairez</title>
+</head>
+<body class="main">
+    <div class="headline">
+        <div class="datos">
+            <h1>EDGAR CHAIREZ</h1>
+            <h3>Ingeniero en Sistemas & QA</h3>
+            <div class="secciones">
+                <button class="glow-on-hover" type="button" onclick="irASeccion('sobreMi')">Saber más</button>
+                <button class="glow-on-hover" type="button" onclick="irASeccion('contacto')">Contactame</button>
             </div>
-          </div>
         </div>
-      </nav>
-    <!-- ------ -->
+        <div class="imagenPrincipal"></div>
+    </div>
 
-    <!-- Acerca de mi -->
-    <div id="fondoAcercaDeMi">
-      <div id="acercaDeMi" class="container text-center pt-3">
-        <div class="row align-items-center">
-          <div class="col-12 col-sm-6">
-            <!-- Carrusel -->
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item container contenido">
-                  <h1 class="fw-bold">Front End Developer</h1>
-                    <p class="align-items-end">Como desarrollador web, tengo una pasión por crear soluciones digitales atractivas y funcionales</p>
+    <div id="sobreMi">
+        <h1 class="fade-in-section">Sobre mí</h1>
+        <p class="descripcion-personal fade-in-section">
+            <strong>Ingeniero en Sistemas Computacionales</strong> & <strong>Tester QA</strong> especializado en la validación técnica post-mitigación de vulnerabilidades en APIs & Entornos Web. Experto en el diseño de pruebas exploratorias & responsable del visto bueno (VoBo) formal, así como de la gestión de documentación crítica de calidad, asegurando el cumplimiento normativo & la excelencia técnica del software."
+        </p>
+        <!---->
+        <div class="card mb-3 fade-in-section mx-auto">
+            <div class="row g-0">
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-center p-3">
+                    <a href="https://www.nttdata.com" target="_blank" rel="noopener noreferrer">
+                        <img src="img/ntt.jpg" class="img-fluid rounded-start imagenEmpresa ntt transition" alt="NTT Data">
+                    </a>
                 </div>
-                <div class="carousel-item active">
-                  <h1 class="fw-bold">Edgar Andres Chairez Sanchez</h1>
-                  <div class="container">
-                    <p class="align-items-end">Ingeniero en Sistemas Computacionales</p>
-                    <p class="formacion fw-bold">Formación</p>
-                    <p class="formacion">Instituto Tecnologico Superior de ElDorado</p>
-                    <button id="curriculum" class="btn btn-outline-secondary mt-2"><a class="nav-link" href="archivos/Curriculum 13-01-24.pdf" target="_blank">Curriculum</a></button>
-                  </div>
+                <div class="col-12 col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title">NTT | Testing Engineering Senior Associate</h5>
+                        <p class="card-text"><small class="text-body-secondary">Mayo 2025 - Actual</small></p>
+                        <p class="card-text">
+                            <strong>QA Exploratorio Estratégico:</strong> Diseño y ejecución de pruebas en entornos con documentación limitada, utilizando pensamiento crítico para identificar vulnerabilidades funcionales.
+                            <br>
+                            <strong>Gestión de Calidad Integral:</strong> Responsable del ciclo completo de pruebas, desde la captura de evidencia técnica hasta la validación del cierre de calidad del software.
+                        </p>
+                        <div class="pildoras-container">
+                            <span class="pildora php">PHP</span>
+                            <span class="pildora postman">POSTMAN</span>
+                            <span class="pildora jira">JIRA</span>
+                            <span class="pildora sql">SQL</span>
+                            <span class="pildora mysql">MySQL</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <button class="carousel-control-prev" type="button btn-danger" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon cambio" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon cambio" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
-            <!-- Carrusel -->
-          </div>
-          <div class="col-12 col-sm-6">
-            <img id="foto" src="img/Foto.png" class="img-thumbnail" alt="https://unsplash.com/es/fotos/IIDZ77VDVQE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- ---------- -->
-
-    <!-- Portafolio -->
-    <div id="fondoProtafolio">
-      <div class="container text-center p-5">
-        <h1>PORTAFOLIO</h1>
-        <!--
-        <h1> <span id="portafolio" title="Portafolio de Proyectos"></span></h1>
-        -->
-        <div class="card text-center text-muted bg-secondary portafolio">
-          <div class="card-header bg-dark text-light">
-              Automatización
-          </div>
-          <div class="card-body cardPortafolio">
-            <h5 class="card-title text-dark">Python con Selenium</h5>
-            <p class="card-text">Programa de automatizacion para obtener el directorio que se encuentra en la paguina <a href="https://opensource-demo.orangehrmlive.com" id="linkSelenium">"https://opensource-demo.orangehrmlive.com"</a>.</p>
-            <a href="https://github.com/EdgarChairez/SeleniumConPython---ObtenerDirectorio/archive/refs/heads/main.zip" class="btn btn-dark">Descargar</a>
-          </div>
+        <!---->
+        <div class="card mb-3 fade-in-section mx-auto">
+            <div class="row g-0">
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-center p-3">
+                    <a href="https://www.coppel.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/coppel.avif" class="img-fluid rounded-start imagenEmpresa coppel transition" alt="Coppel">
+                    </a>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title">COPPEL | Tester</h5>
+                        <p class="card-text"><small class="text-body-secondary">Agosto 2023 - Mayo 2025</small></p>
+                        <p class="card-text">
+                            <strong>QA & Software Testing:</strong> Planificación y ejecución de ciclos de prueba completos, desde el reporte de incidencias hasta la verificación de soluciones.
+                            <br>
+                            <strong>Aseguramiento de Calidad:</strong> Implementación de flujos de trabajo para la identificación y solución de errores, optimizando la fiabilidad del sistema.
+                        </p>
+                        <div class="pildoras-container">
+                            <span class="pildora php">PHP</span>
+                            <span class="pildora sql">SQL</span>
+                            <span class="pildora mysql">MySQL</span>
+                            <span class="pildora git">GITHUB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- ---------- -->
-    
-    <!-- Habilidades Tabla -->
-    <div id="fondoHabilidades">
-      <div id="habilidades" class="container">
-        <!-- Programación -->
-        <table class="table text-center">
-          <thead class="table-dark">
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Programación</th>
-              <th scope="col">Maquetación & Estilos</th>
-              <th scope="col">Base de Datos</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Habilidades principales</th>
-              <td>JS, PHP, C#</td>
-              <td>HTML, CSS, Bootstrap</td>
-              <td>SQL, MySQL, PostgreSQL</td>
-            </tr>
-            <tr>
-              <th scope="row">Habilidades basicas</th>
-              <td>Java, VB, Pyhton, C++</td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <!-- Otras habilidades -->
-        <table class="table text-center">
-          <thead class="table-dark">
-            <tr>
-              <th scope="col">Otras habilidades</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Photoshop, Postman, Git, GitHub, Selenium</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <!-- Habilidades en desarrollo -->
-        <table id="enDesarrollo" class="table text-center">
-          <thead class="table-dark">
-            <tr>
-              <th scope="col" title="Reforzando conocimiento">Reforzando habilidades </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Pyhton, C++</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <!-- ---------- -->
-
-    <!-- Habilidades lista -->
-    <div id="habilidades2" class="container text-center">
-      <ul class="list-group">
-        <li class="list-group-item bg-dark text-light listaHabilidad" aria-current="true">Programacion</li>
-        <li class="list-group-item listaHabilidad">JS, PHP, C#, Java, VB, Pyhton, C++</li>
-        <hr>
-        <li class="list-group-item bg-dark text-light listaHabilidad">Maquetación</li>
-        <li class="list-group-item listaHabilidad">HTML, CSS, Bootstrap</li>
-        <hr>
-        <li class="list-group-item bg-dark text-light listaHabilidad">Base de Datos</li>
-        <li class="list-group-item listaHabilidad">SQL, MySQL, PostgreSQL</li>
-        <hr>
-      </ul>
-      
-      <ul class="list-group">
-        <li class="list-group-item bg-dark text-light listaHabilidad" aria-current="true">Otras habilidades</li>
-        <li class="list-group-item listaHabilidad">Photoshop, Postman, Git, GitHub, Selenium</li>
-        <hr>
-      </ul>
-      
-      <ul class="list-group">
-        <li class="list-group-item bg-dark text-light listaHabilidad" aria-current="true">Habilidades en desarrollo</li>
-        <li class="list-group-item listaHabilidad">C++, Pyhton</li>
-        <hr>
-      </ul>
-    </div>
-    <!-- ------------------------ -->
-
-    <!-- Experiencia -->
-    <div id="fondoExperiencia">
-      <div id="experiencia" class="container text-center pt-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4 ">
-          <!-- Coppel -->
-          <div class="col">
-            <div class="card h-100 quitarBorde">
-              <img src="img/Coppel.jpg" class="card-img-top" alt="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/OpenGraph/og_coppel.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Tester</h5>
-                <p class="card-text">Como Tester, soy responsable de probar el software, planificar, ejecutar y reportar las pruebas, así como identificar y solucionar los errores que encuentre para asegurar su calidad y funcionamiento.</p>
-              </div>
-              <div class="card-footer fecha bg-dark">
-                <small class="text-light">Agosto 2023 - Actualidad</small>
-              </div>
+        <!---->
+        <div class="card mb-3 fade-in-section mx-auto">
+            <div class="row g-0">
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-center p-3">
+                    <a href="https://www.apinterfaces.mx/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/apinterfaces.jpg" class="img-fluid rounded-start imagenEmpresa apinterfaces transition" alt="APInterfaces">
+                    </a>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title">APInterfases | Tester</h5>
+                        <p class="card-text"><small class="text-body-secondary">Mayo 2022 - Agosto 2023</small></p>
+                        <p class="card-text">
+                            <strong>Ciclo Completo de QA:</strong> Responsable de la planificación, ejecución y reporte detallado de pruebas para garantizar la estabilidad de los sistemas.
+                            <br>
+                            <strong>Control de Calidad:</strong> Identificación y seguimiento proactivo de defectos hasta su resolución, asegurando el cumplimiento de los estándares funcionales.
+                        </p>
+                        <div class="pildoras-container">
+                            <span class="pildora php">PHP</span>
+                            <span class="pildora sql">SQL</span>
+                            <span class="pildora mysql">MySQL</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- APInterfases -->
-          <div class="col">
-            <div class="card h-100 quitarBorde">
-              <img src="img/ApInterfaces.png" class="card-img-top" alt="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/OpenGraph/og_coppel.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Tester</h5>
-                <p class="card-text">Como Tester, soy responsable de garantizar la calidad y fiabilidad del software a través de rigurosas pruebas y análisis. Mi objetivo principal es identificar y reportar errores asi como problemas de rendimiento.</p>
-              </div>
-              <div class="card-footer fecha bg-dark">
-                <small class="text-light">Mayo 2022 - Agosto 2023</small>
-              </div>
-            </div>
-          </div>
-          <!-- Coppel -->
-          <div class="col ">
-            <div class="card h-100 quitarBorde">
-              <img src="img/Coppel.jpg" class="card-img-top" alt="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/OpenGraph/og_coppel.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Analista de soporte</h5>
-                <p class="card-text">Como Analista de Soporte, desempeño un papel esencial en el mantenimiento y la resolución de problemas relacionados con el software, hardware o sistemas utilizados por los usuarios finales.</p>
-              </div>
-              <div class="card-footer fecha bg-dark">
-                <small class="text-light">Diciembre 2020 - Mayo 2021</small>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
-      <br>
-      <div class="accordion container" id="accordionFlushExample">
-        <div class="accordion-item quitarBorde  ">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              <h5 class="card-title otros">Otros</h5>
+    <div id="educacion">
+        <h1 class="fade-in-section">Educación</h1>
+        <div class="card mb-3 fade-in-section mx-auto">
+            <div class="row g-0">
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-center p-3">
+                    <a href="https://www.itseldorado.edu.mx/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/tec.webp" class="img-fluid rounded-start imagenEmpresa" alt="Instituto Tecnologico Superior de ElDorado">
+                    </a>
+                    <i class="fas fa-graduation-cap" style="font-size: 3rem; color: #007bff;"></i>
+                </div>
+                <div class="col-12 col-md-9 universidad">
+                    <div class="card-body">
+                        <h5 class="card-title">Instituto Tecnológico Superior de Eldorado</h5>
+                        <p class="card-text"><strong>Ingeniero en Sistemas Computacionales</strong></p>
+                        <p class="card-text"><small class="text-body-secondary">Eldorado, Sinaloa</small></p>
+                    </div>
+                        <span class="pildora html">HTML</span>
+                        <span class="pildora css">CSS</span>
+                        <span class="pildora js">JS</span>
+                        <span class="pildora php">PHP</span>
+                        <span class="pildora c#">C#</span>
+                        <span class="pildora sql">SQL</span>
+                        <span class="pildora mysql">MySQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fade-in-section" id="contacto">
+        <h2>¿Listo para trabajar juntos?</h2>
+        <p>Actualmente disponible para proyectos de Desarrollo Web y Consultoría QA.</p>
+
+        <div class="contact-container">
+            <button onclick="copyEmail()" class="contact-link boton-mail d-inline-block" id="email-btn">Email</button>
+            <a href="https://drive.google.com/file/d/1rJZhEGt2EtcQsUhsVKQSVqKruBpd6rgC/view?usp=sharing" download="CV_Edgar_Chairez_S" class="contact-link cv-btn">
+                Descargar CV
+            </a>
+            
+            <button data-hint-target="contact-popover" id="contact-trigger" class="contact-link boton-mail">
+            WhatsApp
             </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <hr>
-              <p class="card-text fw-bold">Promotor de ventas</p>
-              <p>Mi objetivo principal es brindar una atención personalizada a los clientes, ofrecer información detallada sobre los productos y asesorar en la elección de los materiales adecuados para sus necesidades</p>
-              <hr>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<br>
-  <div id="footer" class="container">
-    <!--<h1 id="tituloFooter">Contacto</h1>-->
-    <div id="sobreMi" class="container">
-      <h1>Sobre Mi</h1>
-      <p>Soy una persona seria, responsable y trabajadora, que se compromete con los objetivos y los resultados. Me caracterizo por ser puntual, honesto y disciplinado, así como por tener empatía con los clientes y los compañeros de trabajo.</p>
-    </div>
-    <div id="iconosFooter"  class="container">
-      <h1>Contacto</h1>
-      <div>
-        <p>chairezandres0@gmail.com</p>
-      </div>
-      <div>
-        <p>(+52) 667-401-8894</p>
-      </div>
-      <div>
-        <p>https://edgarchairez.github.io/EdgarChairez.io/</p>
-      </div>
-      <div>
-        <p>https://github.com/EdgarChairez <button onclick="btnGit()" class="btnFooter">✈</button></p>
-      </div>
-      <div>
-        <p>www.linkedin.com/in/edgarandreschairezsanchez <button onclick="btnIN()" class="btnFooter">✈</button></p>
-      </div>
-    </div>
-  </div>  
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
-  </body>
+            <div popover id="contact-popover">
+                <div class="phone-number">667 473 7051</div>
+                <a href="https://wa.me/526674737051" target="_blank" class="ws-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>
+                    <i class="bi bi-whatsapp"></i> Contactar
+                </a>
+            </div>
+        </div>
+
+        <div id="copy-toast" class="copy-toast"></div>
+
+        <div class="secondary-links">
+            <a href="https://github.com/EdgarChairez" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/edgarandreschairezsanchez" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 Edgar A. Chairez S. | Ing. en Sistemas Computacionales
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="JS/main.js"></script>
 </html>
